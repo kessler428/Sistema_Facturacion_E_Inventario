@@ -1,0 +1,5 @@
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+ErrorDocument 404 http://localhost/administracion/FranciscoBravo/dashboard/error.php
+
+DirectoryIndex index.php

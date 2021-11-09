@@ -1,0 +1,4 @@
+
+ErrorDocument 404 http://localhost/administracion/FranciscoBravo/dashboard/error.php
+
+DirectoryIndex error.php

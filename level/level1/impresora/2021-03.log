@@ -1,0 +1,30 @@
+2021/03/19 22:09:37.547705 Plugin para comunicación con impresoras térmicas 
+Proudly brought to you by Parzibyte
+==========================================
+	https://parzibyte.me/blog
+==========================================
+Entorno: Producción
+2021/03/19 22:09:37.547705 Escuchando en el puerto :8000.
+2021/03/19 22:11:07.128976 Plugin para comunicación con impresoras térmicas 
+Proudly brought to you by Parzibyte
+==========================================
+	https://parzibyte.me/blog
+==========================================
+Entorno: Producción
+2021/03/19 22:11:07.128976 Escuchando en el puerto :8000.
+2021/03/19 22:11:07.144961 listen tcp :8000: bind: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+2021/03/19 22:45:28.913958 Plugin para comunicación con impresoras térmicas 
+Proudly brought to you by Parzibyte
+==========================================
+	https://parzibyte.me/blog
+==========================================
+Entorno: Producción
+2021/03/19 22:45:28.914957 Escuchando en el puerto :8000.
+2021/03/19 22:45:54.835820 Advertencia: ocurrió un error leyendo la clave API del archivo 'api_key.txt'. Esto no es un problema si solo está usando la versión de prueba, pero si usted tiene su clave API recuerde colocarla en el archivo api_key.txt. El archivo debe estar en el mismo directorio que el plugin ejecutable
+2021/03/19 22:46:02.599935 error de servidor. El mensaje es: open \\DESKTOP-2G8GBL1\POS-58-Series: No se encuentra el nombre de red especificado.
+2021/03/19 22:46:10.127023 Advertencia: ocurrió un error leyendo la clave API del archivo 'api_key.txt'. Esto no es un problema si solo está usando la versión de prueba, pero si usted tiene su clave API recuerde colocarla en el archivo api_key.txt. El archivo debe estar en el mismo directorio que el plugin ejecutable
+2021/03/19 22:46:16.437336 error de servidor. El mensaje es: open \\DESKTOP-2G8GBL1\POS-58-Series: No se encuentra el nombre de red especificado.
+2021/03/19 22:48:39.872626 Advertencia: ocurrió un error leyendo la clave API del archivo 'api_key.txt'. Esto no es un problema si solo está usando la versión de prueba, pero si usted tiene su clave API recuerde colocarla en el archivo api_key.txt. El archivo debe estar en el mismo directorio que el plugin ejecutable
+2021/03/19 22:48:43.963521 error de servidor. El mensaje es: open \\DESKTOP-2G8GBL1\POS-58-Series: No se encuentra el nombre de red especificado.
+2021/03/19 22:53:12.621836 Advertencia: ocurrió un error leyendo la clave API del archivo 'api_key.txt'. Esto no es un problema si solo está usando la versión de prueba, pero si usted tiene su clave API recuerde colocarla en el archivo api_key.txt. El archivo debe estar en el mismo directorio que el plugin ejecutable
+2021/03/19 22:53:21.884901 Advertencia: ocurrió un error leyendo la clave API del archivo 'api_key.txt'. Esto no es un problema si solo está usando la versión de prueba, pero si usted tiene su clave API recuerde colocarla en el archivo api_key.txt. El archivo debe estar en el mismo directorio que el plugin ejecutable
