@@ -190,6 +190,7 @@ Fin Datos de la factura -->
                           <th>Descripcion</th>
                           <th>Subtotal</th>
                           <th hidden>preciouni</th>
+                          <th hidden>precioCompra</th>
                           <th>Opciones</th>
                         </tr>
                         </thead>

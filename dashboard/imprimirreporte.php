@@ -13,10 +13,11 @@ $tienda = $_GET["tienda"];
 
 $consul = "SELECT deta.IDFacturaDetalle,
                   deta.Unidades, 
+                  deta.precioCompra,
                   CONCAT(al.NombreArticulo, ' - ', al.Modelopresentacion) as NombreArticulo,
                   deta.Precio, 
-                  (deta.Unidades * al.PrecioCompra) as preciototalcompra, 
-                  (deta.precio - (deta.Unidades * al.PrecioCompra)) as Ganancias, 
+                  (deta.Unidades * deta.precioCompra) as preciototalcompra, 
+                  (deta.precio - (deta.Unidades * deta.precioCompra)) as Ganancias, 
                   deta.TimeSpace, fac.Total from detalledefactura as deta
                   
                   INNER JOIN almacen as al ON al.IDCodigoAlmacen = deta.producto
@@ -32,9 +33,9 @@ $consulta = "SELECT deta.IDFacturaDetalle,
                     SUM(deta.Unidades) as sumauni,
                     al.NombreArticulo, 
                     deta.Precio, 
-                    (deta.Unidades * al.PrecioCompra) as preciototalcompra, 
-                    (deta.precio - (deta.Unidades * al.PrecioCompra)) as Ganancias, 
-                    SUM((deta.precio - (deta.Unidades * al.PrecioCompra))) as sumat,
+                    (deta.Unidades * deta.precioCompra) as preciototalcompra, 
+                    (deta.precio - (deta.Unidades * deta.precioCompra)) as Ganancias, 
+                    SUM((deta.precio - (deta.Unidades * deta.precioCompra))) as sumat,
                     deta.TimeSpace from detalledefactura as deta 
                     INNER JOIN almacen as al ON al.IDCodigoAlmacen = deta.producto
                     INNER JOIN factura as fac ON fac.IDFactura = deta.IDFacturaPK
