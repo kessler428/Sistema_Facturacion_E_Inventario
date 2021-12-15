@@ -91,6 +91,7 @@ switch($valorderegistros){
                 $cantidades = (isset($_POST['cantidades'])) ? $_POST['cantidades'] : '';
                 $precio = (isset($_POST['precio'])) ? $_POST['precio'] : '';
                 $precioUnit = (isset($_POST['precioUnit'])) ? $_POST['precioUnit'] : '';
+                $precioCompra = (isset($_POST['precioCompra'])) ? $_POST['precioCompra'] : '';
 
                 $consulta = "SELECT MAX(IDFactura) AS idfac FROM factura";			
                 $resultado = $conexion->prepare($consulta);
@@ -99,7 +100,7 @@ switch($valorderegistros){
 
                 $valordeid = $data[0]["idfac"];
                 
-                $consulta = "INSERT INTO detalledefactura(Unidades, producto, Precio, IDFacturaPK, preciounit, TimeSpace) VALUES('$cantidades', '$codigoproducto', '$precio', '$valordeid', '$precioUnit','$fechaTime') ";			
+                $consulta = "INSERT INTO detalledefactura(Unidades, producto, Precio, IDFacturaPK, preciounit, precioCompra,TimeSpace) VALUES('$cantidades', '$codigoproducto', '$precio', '$valordeid', '$precioUnit', '$precioCompra' ,'$fechaTime') ";			
                 $resultado = $conexion->prepare($consulta);
                 $resultado->execute();  
                 

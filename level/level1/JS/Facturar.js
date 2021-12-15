@@ -288,6 +288,7 @@ function añadircarrito(){
                                 "<td class='txt'>"+Descripcion+"</td>"+
                                 "<td class='txt total'>"+Subtotal+"</td>"+
                                 "<td class='txt' hidden>"+precioUnit+"</td>"+
+                                "<td class='txt' hidden>"+name.PrecioCompra+"</td>"+
                                 "<td><button type='button' class='btn btn-danger btnEditar'>Eliminar</button></td>"+
                             "</tr>";
     
@@ -483,6 +484,7 @@ function guardarDetalle(){
         cantidades = fila.children[1].innerHTML;
         precio = fila.children[4].innerHTML;
         preciounit = fila.children[5].innerHTML;
+        precioCompra = fila.children[6].innerHTML;
 
         //Inserccion de los valores.
         $.ajax({
@@ -494,7 +496,8 @@ function guardarDetalle(){
                 codigoproducto: codigoproducto,
                 cantidades: cantidades,
                 precio: precio,
-                precioUnit: preciounit
+                precioUnit: preciounit,
+                precioCompra: precioCompra
             }, 
             success: function(data) {
                 console.log("Factura Guardada");
