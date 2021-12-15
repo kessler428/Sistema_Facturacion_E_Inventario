@@ -67,13 +67,13 @@ function Viewusuarios(){
   }, 
   success:function(data){
       let venta = JSON.parse(data)[0].venta;
-      $('#ventatotal').html("C$: "+ parseFloat(venta).toLocaleString(undefined, {minimumFractionDigits: 2}));
+      $('#ventatotal').html("C$: "+ parseFloat(venta).toLocaleString('en-US', undefined, {minimumFractionDigits: 2}));
 
       let compra = JSON.parse(data)[0].compra;
-      $('#compras').html("C$: "+parseFloat(compra).toLocaleString(undefined, {minimumFractionDigits: 2}));
+      $('#compras').html("C$: "+parseFloat(compra).toLocaleString('en-US', undefined, {minimumFractionDigits: 2}));
 
       let ganancias = JSON.parse(data)[0].ganancias;
-      $('#ganancias').html("C$: "+ parseFloat(ganancias).toLocaleString(undefined, {minimumFractionDigits: 2}));
+      $('#ganancias').html("C$: "+ parseFloat(ganancias).toLocaleString('en-US', undefined, {minimumFractionDigits: 2}));
   }
 });
 
