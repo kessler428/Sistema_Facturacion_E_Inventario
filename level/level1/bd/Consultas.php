@@ -115,6 +115,7 @@ switch($valordeConsulta){
                             al.Codigo1, 
                             al.NombreArticulo, 
                             al.precioVenta, 
+                            al.PrecioCompra, 
                             al.Marca, 
                             al.Modelopresentacion, 
                             uno.Stock 
