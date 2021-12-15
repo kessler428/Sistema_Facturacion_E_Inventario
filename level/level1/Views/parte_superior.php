@@ -5,15 +5,10 @@
 <?php
 session_start();
 
-$validacion = "llyrbravos@gmail.com";
-
 if($_SESSION["s_usuario"] === null){
     header("Location: ../index.php");
 }
 
-if(strcmp($_SESSION["s_usuario"], $validacion)){
-  header("Location: ../../index.php");
-}
 ?>
   
   <meta charset="utf-8">
