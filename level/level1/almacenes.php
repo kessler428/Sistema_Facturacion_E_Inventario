@@ -66,11 +66,11 @@
                         <thead class="text-center">
                             <tr>
                                 <th hidden>id</th>
-                                <th>Codigo 1</th>
-                                <th hidden>Codigo 2</th>
                                 <th>Nombre</th>
+                                <th hidden>Codigo 2</th>
+                                <th>Codigo 1</th>
                                 <th>Marca</th>
-                                <th hidden>Modelo</th>
+                                <th>Modelo</th>
                                 <th>Precio Venta</th>
                                 <th hidden>Precio Compra</th>
                                 <th >Stock</th>
@@ -84,11 +84,11 @@
                             ?>
                                 <tr>
                                     <td hidden><?php echo $dat['IDCodigoAlmacen'] ?></td>
-                                    <td><?php echo $dat['Codigo1'] ?></td>
-                                    <td hidden><?php echo $dat['Codigo2'] ?></td>
                                     <td><?php echo $dat['NombreArticulo'] ?></td>
+                                    <td hidden><?php echo $dat['Codigo2'] ?></td>
+                                    <td><?php echo $dat['Codigo1'] ?></td>
                                     <td><?php echo $dat['Marca'] ?></td>
-                                    <td hidden><?php echo $dat['Modelopresentacion'] ?></td>
+                                    <td><?php echo $dat['Modelopresentacion'] ?></td>
                                     <td><?php echo number_format($dat['precioVenta'], 2, '.', ''); ?></td>
                                     <td hidden><?php echo number_format($dat['PrecioCompra'], 2, '.', ''); ?></td>                                    
                                     <td><?php echo $dat['almacenuno'] ?></td>
