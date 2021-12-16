@@ -40,9 +40,13 @@ function Viewusuarios(){
           valordeConsulta: 12, 
       }, 
       success:function(data){
-          let inv = JSON.parse(data)[0].suma;
-          $('#dineroencaja').html(parseFloat(inv).toLocaleString(undefined, {minimumFractionDigits: 2}));
-      }
+        let suma = JSON.parse(data)[0].suma;
+        if(suma == null){
+            $('#dineroencaja').html("C$ 0");
+        }else{
+            $('#dineroencaja').html("C$ "+suma);
+        }
+    }
    });
 
    $.ajax({
